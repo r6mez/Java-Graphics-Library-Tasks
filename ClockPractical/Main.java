@@ -130,8 +130,6 @@ public class Main extends JPanel {
         g2.fillOval(ballX, ballY, ballRadius, ballRadius);
         g2.setColor(new Color(255, 255, 255, 120));
         g2.fillOval(ballX + 5, ballY + 5, 6, 6);
-
-        g2.dispose();
     }
 
     void drawBells(Graphics2D p) {
@@ -148,7 +146,7 @@ public class Main extends JPanel {
         int handleY = boxY - boxDepth + 30;
         int buttonY = handleY - 20;
 
-        handle
+        // handle
         p.setColor(bellColor.darker());
         p.fillRoundRect(centerX - handleWidth / 2 + 5, handleY - 5, handleWidth, handleHeight, 10, 10);
         p.setColor(bellColor);
